@@ -1,0 +1,22 @@
+influxdb:
+    'host': 'qpdpecon24101-int'
+    'port': 8086
+    'user': 'admin'
+    'password': 'admin'
+    'dbname': 'test_lanz'
+    'use_udp': False
+    'retention_policy': 'autogen'
+    'time_precision': 'ns'
+
+lanz:
+    'host': '10.118.14.80'
+    'port': 50001
+    'reader': 'reader.lanz_reader'
+    'reconnect_wait_time_ms': 1000
+
+encoder: 'encoder.encoder'
+
+log:
+    'in_file': True
+    'filename': 'my.log'
+    'format': '%(asctime)-15s %(name)s:%(levelname)s:%(message)s'
